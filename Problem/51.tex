@@ -1,0 +1,55 @@
+\begin{problem}
+Một tam giác có độ dài ba cạnh là $a, b, c$ thỏa mãn
+\[
+	(a + b - c)^3 + (b + c - a)^3 + (c + a - b)^3 = a^3 + b^3 + c^3.
+\]
+Chứng minh tam giác đó là tam giác đều.
+
+\credit{Đề thi tuyển sinh lớp 10 Toán - Tin chuyên Quảng Trị, 2010}
+\solution
+
+\begin{mybox}
+\begin{lemma}
+Với mọi $x, y > 0$, ta có: $\displaystyle x^3 + y^3 \ge \frac{(x + y)^3}{4}$.
+\end{lemma}
+
+\begin{proof}
+Do $x^3 + y^3 = (x + y)(x^2 - xy + y^2)$ nên bất đẳng thức tương đương với $\displaystyle x^2 - xy + y^2 \ge \frac{(x + y)^2}{4}$.
+
+Sử dụng bất đẳng thức AM - GM hai số dạng $\displaystyle xy \le \frac{(x + y)^2}{4}$ ta được
+\[
+	x^2 - xy + y^2 = (x + y)^2 - 3xy \ge (x + y)^2 - 3.\frac{(x + y)^2}{4} = \frac{(x + y)^2}{4}.
+\]
+Bổ đề được chứng minh.
+\end{proof}
+\end{mybox}
+
+Vì $a, b, c$ là ba cạnh tam giác nên ta có
+\[
+	a + b - c > 0,\ b + c - a > 0,\ c + a - b > 0
+\]
+Áp dụng bổ đề ta có
+\begin{align*}
+	(a + b - c)^3 + (b + c - a)^3 \ge \frac{[(a + b - c) + (b + c - a)]^3}{4} = 2b^3 \\ 
+	(b + c - a)^3 + (c + a - b)^3 \ge \frac{[(b + c - a) + (c + a - b)]^3}{4} = 2c^3 \\
+	(c + a - b)^3 + (a + b - c)^3 \ge \frac{[(c + a - b) + (a + b - c)]^3}{4} = 2a^2
+\end{align*}
+
+Cộng ba bất đẳng thức trên lại theo vế ta được
+\begin{align*}
+	2[(a + b - c)^3 + (b + c - a)^3 + (c + a - b)^3] &\ge 2(a^3 + b^3 + c^3) \\ 
+	\Leftrightarrow (a + b - c)^3 + (b + c - a)^3 + (c + a - b)^3 &\ge a^3 + b^3 + c^3
+\end{align*}
+
+Mà theo giả thiết ban đầu thì dấu bằng xảy ra, do vậy ta có
+$$
+\begin{cases}
+	&a + b - c = b + c - a \\
+	&b + c - a = c + a - b \\
+	&c + a - b = a + b - c
+\end{cases}
+\Leftrightarrow a = b = c.
+$$
+
+Vậy tam giác đã cho là tam giác đều.
+\end{problem}

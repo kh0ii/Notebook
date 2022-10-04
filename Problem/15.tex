@@ -1,0 +1,28 @@
+\begin{problem}
+	Cho $a, b, c$ và $x, y, z$ là các số thực dương thỏa mãn
+	$$
+	a + b + c = x + y + z.
+	$$
+	Chứng minh rằng
+	$$
+	ax(a + x) + by(b + y) + cz(c + z) \ge 3(abc + xyz).
+	$$
+	\solution
+	
+	Áp dụng bất đẳng thức Cauchy - Schwarz cho 2 bộ số 
+	$$
+	(a\sqrt{x},\ b\sqrt{y},\ c\sqrt{z}),\ (\sqrt{xy},\ \sqrt{yz},\ \sqrt{zx})
+	$$ ta có:
+	$$
+		(a^2x + b^2y + c^2z)(xy + yz + zx) \ge xyz(a + b + c)^2.
+	$$
+	Lại có 
+	$$
+	(a + b + c)^2 = (x + y + z)^2 \ge 3(xy + yz + zx).
+	$$
+	Suy ra 
+	$$a^2x + b^2y + c^2z \ge 3xyz.$$
+	Tương tự ta có $ax^2 + by^2 + cz^2 \ge 3abc$.
+
+	Cộng hai vế của hai bất đẳng thức trên, ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c = x = y = z$.
+\end{problem}

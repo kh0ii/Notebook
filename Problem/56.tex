@@ -1,0 +1,24 @@
+\begin{problem}
+	Cho ba số thực $x, y, z$ dương thỏa mãn $\displaystyle \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 3$. Chứng minh rằng
+	\[
+		\frac{x^2}{z(z^2 + x^2)} + \frac{y^2}{x(x^2+ y^2)} + \frac{z^2}{y(y^2 + z^2)} \ge \frac{3}{2}
+	\]
+	\credit{HSG Huyện Ba Vì, 2022 - 2023}
+	\solution
+
+	\[
+		\frac{x^2}{z(z^2 + x^2)} = \frac{1}{z} - \frac{z^2}{z(z^2 + x^2)} = \frac{1}{z} - \frac{z}{z^2 + x^2}.
+	\]
+	Áp dụng bất đẳng thức AM - GM ta có
+	\[
+		\frac{z}{z^2 + x^2} \le \frac{z}{2xz} = \frac{1}{2x} \Rightarrow 
+		\frac{1}{z} - \frac{z}{z^2 + x^2} \ge \frac{1}{z} - \frac{1}{2x}
+	\]
+	Suy ra
+	\[
+		\frac{x^2}{z(z^2 + x^2)} + \frac{y^2}{x(x^2+ y^2)} + \frac{z^2}{y(y^2 + z^2)}
+		= \frac{1}{x} + \frac{1}{y} + \frac{1}{z} - \left(\frac{1}{2x} + \frac{1}{2y} + \frac{1}{2z}\right) = 3 - \frac{3}{2} = \frac{3}{2}.
+	\]
+	Đẳng thức xảy ra khi và chỉ khi $x = y = z = 1$.
+
+\end{problem}

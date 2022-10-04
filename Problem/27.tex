@@ -1,0 +1,31 @@
+\begin{problem}
+
+Với $x, y, z > 0$, chứng minh rằng
+$$
+	\frac{x - y}{xy + 2y + 1} + \frac{y - z}{zy + 2z + 1} + \frac{z - x}{xz + 2x + 1} \ge 0.
+$$
+\solution
+
+Ta có:
+$$
+	\frac{x - y}{xy + 2y + 1} + 1 = \frac{xy + x + y + 1}{xy + 2y + 1} = \frac{(x + 1)(y + 1)}{xy + 2y + 1}
+$$
+Tương tự, ta có bất đẳng thức cần chứng minh là
+$$
+	\sum \frac{(x + 1)(y + 1)}{xy + 2y + 1} \ge 3
+$$
+Đặt $a = x + 1, b = y + 1, c = z + 1$, ta được
+$$
+	\sum \frac{ab}{ab - a + b} \ge 3
+$$
+suy ra
+$$
+	\sum \frac{1}{1 - \frac{1}{b} + \frac{1}{a}} \ge 3
+$$
+Áp dụng bất đẳng thức $\displaystyle \frac{1}{a} + \frac{1}{b} + \frac{1}{c} \ge \frac{9}{a + b + c}$ ta có
+$$
+	\sum \frac{1}{1 - \frac{1}{b} + \frac{1}{a}} \ge \frac{9}{3 - \frac{1}{b} + \frac{1}{a} - \frac{1}{c} + \frac{1}{b} - \frac{1}{a} + \frac{1}{b}} = \frac{9}{3} = 3
+$$
+Vậy ta có điều phải chứng minh.
+
+\end{problem}

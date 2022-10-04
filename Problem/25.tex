@@ -1,0 +1,29 @@
+\begin{problem}
+
+Với $a, b, c > 0$ thỏa mãn $\displaystyle a + b + c + \frac{1}{a} + \frac{1}{b} + \frac{1}{c} = 10$,
+chứng minh rằng $1 \le a + b + c \le 9$.
+\solution
+
+Áp dụng bất đẳng thức $\displaystyle \frac{1}{a} + \frac{1}{b} + \frac{1}{c} \ge \frac{9}{a + b + c}$ ta được
+$$
+	10 = a + b + c + \frac{1}{a} + \frac{1}{b} + \frac{1}{c} \ge a + b + c + \frac{9}{a + b + c}
+$$
+Đặt $t = a + b + c,\ t > 0$ ta được $\displaystyle 10 \ge t + \frac{9}{t}$.
+
+Suy ra
+$$
+	t + \frac{9}{t} - 10 \le 0
+$$
+Vì $t > 0$, nhân $t$ vào cả hai vế ta được
+$$
+	t^2 - 10t + 9 \le 0
+$$
+nên
+$$
+	(t - 1)(t - 9) \le 0
+$$
+
+Vậy $t - 1$ và $t - 9$ khác dấu. Sau khi xét trường hợp ta được $1 \le t \le 9$.
+Ta có điều phải chứng minh.
+
+\end{problem}

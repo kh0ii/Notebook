@@ -1,0 +1,15 @@
+\begin{problem}
+	Với $a, b, c$ là các số thực dương, chứng minh rằng:
+	$\displaystyle \frac{a^3}{b} + \frac{b^3}{c} + \frac{c^3}{a} \ge ab + bc + ca$;
+	\solution
+	
+		Ta có: $a^3 + b^3 \ge ab(a + b) \Rightarrow a^3 \ge ab(a + b) - b^3$.
+		$$
+		\Rightarrow \displaystyle \frac{a^3}{b} \ge \frac{a^2b + ab^2 - b^3}{b} = 
+		a^2 + ab - b^2.
+		$$
+		Tương tự với các số hạng còn lại ở vế trái rồi cộng các vế lại ta được:
+		$$\frac{a^3}{b} + \frac{b^3}{c} + \frac{c^3}{a} \ge 
+		(a^2 + ab - b^2) + (b^2 + bc - c^2) + (c^2 + ca - a^2) = ab + bc + ca$$
+		Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+\end{problem}

@@ -1,0 +1,22 @@
+\begin{problem}
+	Cho hai số $a \neq 0$ và $b \neq 0$. Chứng minh rằng
+	\[
+		\frac{a^2}{b^2} + \frac{b^2}{a^2} + 4 \ge 3\left(\frac{a}{b} + \frac{b}{a}\right)
+	\]
+	\credit{HSG TP. Nha Trang, 2022 - 2023}
+	\solution
+
+	\[
+		\frac{a^2}{b^2} + \frac{b^2}{a^2} + 4 = \frac{a^2}{b^2} + \frac{b^2}{a^2} + 2.\frac{a}{b}.\frac{b}{a} + 2 = \left(\frac{a}{b} + \frac{b}{a}\right)^2 + 2	
+	\]	
+	Đặt $\displaystyle t = \frac{a}{b} + \frac{b}{a}$. Bất đẳng thức cần chứng minh tương đương
+	\[
+		t^2 + 2 \ge 3t \Leftrightarrow t^2 - 3t + 2 \ge 0 \Leftrightarrow (t - 1)(t - 2) \ge 0.
+	\]
+	Mà theo bất đẳng thức AM - GM ta có
+	\[
+		t = \frac{a}{b} + \frac{b}{a} \ge 2\sqrt{\frac{a}{b}\cdot\frac{b}{a}} = 2.
+	\]
+	Vậy bất đẳng thức trên luôn đúng. Dấu bằng xảy ra khi và chỉ khi $a = b$.
+	
+\end{problem}

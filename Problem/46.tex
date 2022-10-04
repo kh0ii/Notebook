@@ -1,0 +1,31 @@
+\begin{problem}
+    Cho các số thực $a, b, c$ là ba cạnh của một tam giác, có chu vi bằng $1$. Hãy tìm giá trị lớn nhất của biểu thức
+    $$
+        4\left(\frac{1}{a + b} + \frac{1}{b + c} + \frac{1}{c + a}\right) - \left(\frac{ab + bc + ca}{abc}\right).
+    $$
+    \solution
+    
+    Không mất tính tổng quát giả sử $a \ge max\{b, c\}$. Khi đó ta có $\displaystyle a < \frac{1}{2}$ vì nếu $\displaystyle a \ge \frac{1}{2}$ thì $ \displaystyle b + c \le \frac{1}{2} \le a$ mà do $a, b, c$ là ba cạnh của một tam giác nên $a < b + c$ suy ra mâu thuẫn. Tương tự ta có $\displaystyle 0 < a, b, c < \frac{1}{2}$
+    
+    Theo giả thiết ta có $a + b + c = 1$, suy ra $b + c = 1 - a$, $c + a = 1 - b$, $a + b = 1 - c$.
+    
+    Vậy bất đẳng thức cần chứng minh tương đương
+    $$
+        4\left(\frac{1}{1 - a} + \frac{1}{1 - b} + \frac{1}{1 - c}\right) - \left(\frac{ab}{abc} + \frac{bc}{abc} + \frac{ca}{abc}\right)
+    $$
+    hay 
+    $$
+        \frac{4}{1 - a} + \frac{4}{1 - b} + \frac{4}{1 - c} - \frac{1}{a} - \frac{1}{b} - \frac{1}{c}.
+    $$
+    
+    Ta sử dụng bất đẳng thức sau $\displaystyle \frac{4}{1 - a} - \frac{1}{a} \le 18a - 3$. Thật vậy, bất đẳng thức này tương đương 
+    
+    $\displaystyle \frac{(18a - 3)(1 - a)a - 5a + 1}{a(1 - a)} \ge 0$ hay $\displaystyle \frac{\left(x - \frac{1}{3}\right)^2(9 - 18a)}{a(1 - a)} \ge 0$ luôn đúng với mọi $\displaystyle 0 < a < \frac{1}{2}$.
+    
+    Tương tự ta có
+    $$
+        \frac{4}{1 - a} + \frac{4}{1 - b} + \frac{4}{1 - c} - \frac{1}{a} - \frac{1}{b} - \frac{1}{c} =
+        \left(\frac{4}{1 - a} - \frac{1}{a} \right) + \left(\frac{4}{1 - b} - \frac{1}{b}\right) + \left(\frac{4}{1 - c} - \frac{1}{c}\right) \le 18(a + b + c) - 9 = 9.
+    $$
+    Vậy biểu thức đạt giá trị lớn nhất bằng $9$ khi $\displaystyle a = b = c = \frac{1}{3}$.
+\end{problem}

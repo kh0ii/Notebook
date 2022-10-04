@@ -1,0 +1,24 @@
+\begin{problem}
+	Cho $a, b$ là các số thực dương. Chứng minh rằng
+	\[
+		\sqrt{2}(\sqrt{a(a + b)^3} + b\sqrt{a^2 + b^2}) \le 3(a^2 + b^2).
+	\]
+	\credit{Irish MO 2004}
+	\solution
+
+	Theo bất đẳng thức AM - GM
+	\[
+		\sqrt{2a(a + b)^3} = (a + b)\sqrt{2a(a + b)} \le \frac{2a(a + b) + (a + b)^2}{2}
+		= \frac{2a^2 + 2ab + a^2 + 2ab + b^2}{2} = \frac{3a^2 + b^2 + 4ab}{2}.
+	\]
+	\[
+		b\sqrt{2(a^2 + b^2)} = \sqrt{2b^2(a^2 + b^2)} \le \frac{2b^2 + a^2 + b^2}{2}
+		= \frac{a^2 + 3b^2}{2}.
+	\]
+	Cộng hai bất đẳng thức trên theo vế ta được
+	\[
+		VT \le \frac{4a^2 + 4b^2 + 4ab}{2} = 2a^2 + 2b^2 + 2ab \le 2a^2 + 2b^2 + a^2 + b^2 = 
+		3(a^2 + b^2).
+	\]
+	Đẳng thức xảy ra khi và chỉ khi $a = b$.
+\end{problem}

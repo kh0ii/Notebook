@@ -1,0 +1,55 @@
+\begin{problem}
+	Chứng minh các bất đẳng thức sau với $a, b, c > 0$:
+	\begin{enumerate}[a)]
+		\item 
+		$\displaystyle \frac{1}{2a + b} + \frac{1}{2b + c} + \frac{1}{2c + a} \le 
+		\frac{1}{3}\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)$;
+		\item
+		$\displaystyle \frac{1}{2a + b + c} + \frac{1}{2b + c + a} + \frac{1}{2c + a + b} \le 
+		\frac{1}{4}\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)$;
+		\item 
+		$\displaystyle \frac{a^2 - c^2}{b + c} + \frac{b^2 - a^2}{c + a} + \frac{c^2 - b^2}{a + b} \ge 0$.
+	\end{enumerate}
+
+	\solution
+	\begin{enumerate}[a)]
+		\item 
+		Từ bất đẳng thức $\displaystyle \frac{1}{x} + \frac{1}{y} + \frac{1}{z} \ge 
+		\frac{9}{x + y + z}$ ta có:
+
+		$\displaystyle \frac{1}{2a + b} = \frac{1}{a + a + b} \le \frac{1}{9}\left(\frac{1}{a} + \frac{1}{a} + \frac{1}{b}\right) = \frac{1}{9}\left(\frac{2}{a} + \frac{1}{b}\right)$
+
+		Suy ra vế trái $\displaystyle \le \frac{1}{9}\left(\frac{2}{a} + \frac{1}{b}
+		+ \frac{2}{b} + \frac{1}{c} + \frac{2}{c} + \frac{1}{a} \right)	= \frac{1}{9}\left(
+		\frac{3}{a} + \frac{3}{b} + \frac{3}{c} \right) = \frac{1}{3}\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} \right)$
+
+		Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+		\item 
+		Từ bất đẳng thức $\displaystyle \frac{1}{x} + \frac{1}{y} \ge \frac{4}{x + y}$ ta có:
+
+		$\displaystyle \frac{1}{2a + b + c} = \frac{1}{(a + b) + (a + c)} \le \frac{1}{4}
+		\left(\frac{1}{a + b} + \frac{1}{a + c}\right) \le \frac{1}{16}\left(
+		\frac{1}{a} + \frac{1}{b} + \frac{1}{a} + \frac{1}{c}\right) \\ = \frac{1}{16}
+		\left(\frac{2}{a} + \frac{1}{b} + \frac{1}{c}\right)$
+
+		Suy ra vế trái $\displaystyle \le \frac{1}{16}\left(\frac{2}{a} + \frac{1}{b} + \frac{1}{c} + \frac{2}{b} + \frac{1}{c} + \frac{1}{a} + \frac{2}{c} + \frac{1}{a} + \frac{1}{b} \right) = \frac{1}{16}\left(\frac{4}{a} + \frac{4}{b} + \frac{4}{c}\right) \\ = 
+		\frac{1}{4}\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)$
+
+		Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+
+		\item
+		Không mất tính tổng quát, ta giả sử $a \ge b \ge c$.
+
+		Ta có:
+
+		$\displaystyle \frac{a^2 - c^2}{b + c} + \frac{b^2 - a^2}{c + a} + \frac{c^2 - b^2}{a + b} = \frac{a^2 - c^2}{b + c} + \frac{(c^2 - a^2) - (c^2 - b^2)}{c + a} + \frac{c^2 - b^2}{a + b} \\ = (a^2 - c^2)\left(\frac{1}{b + c} - \frac{1}{a + b}\right) + 
+		(c^2 - b^2)\left(\frac{1}{a + b} - \frac{1}{a + c} \right)$
+
+		Do $\displaystyle a \ge c \Rightarrow a^2 - c^2 \ge 0;\ b + c \le a + b \Rightarrow \frac{1}{b + c} \ge \frac{1}{a + b} \Rightarrow \frac{1}{b + c} - \frac{1}{a + b} \ge 0 \\ \Rightarrow (a^2 - c^2)\left(\frac{1}{b + c} - \frac{1}{a + b}\right) \ge 0$
+
+		Do $\displaystyle c \le b \Rightarrow c^2 - b^2 \le 0;\ a + b \ge a + c \Rightarrow 
+		\frac{1}{a + b} \le \frac{1}{a + c} \Rightarrow \frac{1}{a + b} - \frac{1}{a + c} \le 0\\\Rightarrow (c^2 - b^2)\left(\frac{1}{a + b} - \frac{1}{a + c} \right) \ge 0$
+
+		Suy ra vế phải $\ge 0$, ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+	\end{enumerate}
+\end{problem}

@@ -1,0 +1,24 @@
+\begin{problem}
+	Với $a, b, c > 0$ thỏa mãn $(a + b)(b + c)(c + a) \le 8$, chứng minh rằng $ab + bc + ca \le 3$.
+	\solution
+
+	Ta có
+	$$
+		8 \ge (a + b)(b + c)(c + a) \ge \frac{8}{9}(a + b + c)(ab + bc + ca)	
+	$$
+	Bình phương hai vế ta được
+	$$
+		64 \ge \frac{64}{81}(a + b + c)^2(ab + bc + ca)^2
+	$$
+	Từ bất đẳng thức $(a + b + c)^2 \ge 3(ab + bc + ca)$ suy ra
+	$$
+		64 \ge \frac{64}{81}(a + b + c)^2(ab + bc + ca)^2 \ge \frac{64}{27}(ab + bc + ca)^3
+	$$
+	nên
+	$$
+		1 \ge \frac{(ab + bc + ca)^3}{27} \Rightarrow (ab + bc + ca)^3 \le 27 \Rightarrow 
+		ab + bc + ca \le 3.
+	$$
+	Vậy ta có điều phải chứng minh. Dấu bằng xảy ra khi và chỉ khi $a = b = c$.
+
+\end{problem}

@@ -1,0 +1,26 @@
+\begin{problem}
+	Cho $a, b, c$ là các số thực dương tùy ý. Chứng minh rằng
+	\[
+		a^2b^2 + b^2c^2 + c^2a^2 \ge abc(a + b + c).
+	\]
+
+	\solution
+
+	Áp dụng bất đẳng thức AM - GM ta có
+	\[
+		a^2b^2 + b^2c^2 \ge 2.\sqrt{a^2b^4c^2} = 2ab^2c.
+	\]
+	Tương tự, ta có 
+	\[
+		b^2c^2 + c^2a^2 \ge 2abc^2,\, c^2a^2 + a^2b^2 \ge 2a^2bc
+	\]
+	Cộng hai vế của các bất đẳng thức trên ta được 
+	$$
+		2(a^2b^2 + b^2c^2 + c^2a^2) \ge 2(ab^2c	+ abc^2 + a^2bc) = 2abc(a + b + c)
+	$$ 
+	hay 
+	$$
+		a^2b^2 + b^2c^2 + c^2a^2 \ge abc(a + b + c)
+	$$
+	Đẳng thức xảy ra khi $a = b = c$.
+\end{problem}

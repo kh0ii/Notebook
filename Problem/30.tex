@@ -1,0 +1,22 @@
+\begin{problem}
+	Cho $x, y, z$ là các số dương thỏa mãn $x^2 + y^2 + z^2 = 12$. Chứng minh rằng:
+	$$
+		P = \frac{1}{\sqrt{x^3 + 1}} + \frac{1}{\sqrt{y^3 + 1}} + \frac{1}{\sqrt{z^3 + 1}} \ge 1.
+	$$
+	\solution
+
+	Áp dụng bất đẳng thức AM - GM ta có
+	\[
+		\sqrt{x^3 + 1} = \sqrt{(x + 1)(x^2 - x + 1)} \le \frac{(x + 1) + (x^2 - x + 1)}{2} = \frac{x^2 + 2}{2}.
+	\]
+
+	Vậy $\displaystyle \frac{1}{\sqrt{x^3 + 1}} \ge \frac{2}{x^2 + 2} = \frac{4}{2x^2 + 4}$.
+
+	Tương tự và áp dụng bất đẳng thức cộng mẫu ta được
+	$$
+		P \ge \frac{4}{2x^2 + 4} + \frac{4}{2y^2 + 4} + \frac{4}{2z^2 + 4} \ge \frac{(2 + 2 + 2)^2}{
+		2(x^2 + y^2 + z^2) + 12} = \frac{36}{36} = 1.
+	$$
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $x = y = z = 2$.
+
+\end{problem}

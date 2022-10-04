@@ -1,0 +1,16 @@
+\begin{problem}
+	Cho $a, b, c > 0$. Tìm giá trị nhỏ nhất của 
+	$$
+		\frac{a}{2b + 3c} + \frac{b}{2c + 3a} + \frac{c}{2a + 3b}.
+	$$
+	\solution
+
+	Áp dụng bất đẳng thức Cauchy - Schwarz ta có:
+	\begin{align*}
+		\frac{a}{2b + 3c} + \frac{b}{2c + 3a} + \frac{c}{2a + 3b} = 
+		&\frac{a^2}{2ab + 3ca} + \frac{b^2}{2bc + 3ab} + \frac{c^2}{2ca + 3bc}
+		\ge \frac{(a + b + c)^2}{5(ab + bc + ca)} \\
+		&\ge \frac{3(ab + bc + ca)}{5(ab + bc + ca)} = \frac{3}{5}
+	\end{align*}
+	Dấu bằng xảy ra khi và chỉ khi $a = b = c$.
+\end{problem}

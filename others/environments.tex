@@ -1,0 +1,57 @@
+\newcommand{\enterProblemHeader}[1]{
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \stepcounter{#1}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+
+
+\newenvironment{problem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    %\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Bài \arabic{homeworkProblemCounter}:}]
+    %\begin{tcolorbox}[colback=blue!5!white,colframe=white!75!black,title=\textbf{Bài \arabic{homeworkProblemCounter}:}]
+    \begin{tcolorbox}[lower separated=false,
+                colback=white!80!gray,
+                colframe=white, fonttitle=\bfseries,
+                colbacktitle=white!50!gray,
+                coltitle=black,
+                enhanced,
+                boxed title style={colframe=black},
+                attach boxed title to top left={xshift=0.5cm,yshift=-2mm},
+                title=\textbf{Bài \arabic{homeworkProblemCounter}:}]
+    \setcounter{equation}{0}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+% Alias for the Solution section header
+\newcommand{\solution}{\end{tcolorbox}\textbf{Lời giải}}
+
+\newtcolorbox{mybox}{
+enhanced,
+boxrule=0pt,frame hidden,
+borderline west={4pt}{0pt}{green!75!black},
+colback=green!10!white,
+sharp corners
+}
+
+% Theorems and Proofs
+% remove parantheses
+\makeatletter
+\def\thmhead@plain#1#2#3{%
+  \thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}%
+  \thmnote{ {\the\thm@notefont#3}}}
+\let\thmhead\thmhead@plain
+\makeatother
+
+\newtheorem*{theorem}{Định lý}
+\newtheorem*{corollary}{Hệ quả}
+\newtheorem*{lemma}{Bổ đề}

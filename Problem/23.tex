@@ -1,0 +1,28 @@
+\begin{problem}
+	Với $a, b, c > 0$ thỏa mãn $a + b + c = 22$, chứng minh rằng
+	$$
+		\frac{a}{a + 1} + \frac{b}{b + 4} + \frac{c}{c + 9} \le 2.
+	$$
+	\solution
+
+	Ta có
+	$$
+		\frac{a}{a + 1} + \frac{b}{b + 4} + \frac{c}{c + 9} = 1 - \frac{1}{a + 1}
+		+ 1 - \frac{4}{b + 4} + 1 - \frac{9}{c + 9} = 3 - \frac{1}{a + 1} - \frac{4}{b + 4}
+		- \frac{9}{c + 9} 
+	$$
+	Vậy ta cần chứng minh 
+	$$
+		\frac{1}{a + 1} + \frac{4}{b + 4} + \frac{9}{c + 9} \ge 1
+	$$
+	Áp dụng bất đẳng thức cộng mẫu ta có
+	$$
+		\frac{1}{a + 1} + \frac{4}{b + 4} + \frac{9}{c + 9} \ge \frac{(1 + 2 + 3)^2}{a + 1 + b + 4 + c + 9} = \frac{36}{36} = 1
+	$$
+	Vậy ta có điều phải chứng minh. Dấu bằng xảy ra khi và chỉ khi $\displaystyle \frac{1}{a + 1} = \frac{4}{b + 4} = \frac{9}{c + 9}$. Áp dụng tính chất dãy tỉ số bằng nhau ta được
+	$$
+		\frac{1}{a + 1} = \frac{2}{b + 4} = \frac{3}{c + 9} = \frac{1 + 2 + 3}{a + 1 + b + 4 + c + 9} = 
+		\frac{1}{6}.
+	$$
+	Vậy $a = 5,\ b = 8,\ c = 9$.
+\end{problem}

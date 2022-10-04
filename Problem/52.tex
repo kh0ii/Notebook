@@ -1,0 +1,42 @@
+\begin{problem}
+Cho $a, b, c$ là các số thực dương thỏa mãn $abc = 1$. Chứng minh rằng
+\[
+	\frac{ab}{a^5 + b^5 + ab} + \frac{bc}{b^5 + c^5 + bc} + \frac{ca}{c^3 + a^3 + ca} \le 1.
+\]
+\credit{IMO Shortlist 1996}
+\solution
+
+\begin{mybox}
+\begin{lemma}
+Với mọi $a, b > 0$, ta có: $a^5 + b^5 \ge a^2 b^2(a + b)$.
+\end{lemma}
+
+\begin{proof}
+Ta có $a^5 + b^5 = (a - b)(a^4 - a^3b + a^2b^2 - ab^3 + b^4)$.
+Do đó bất đẳng thức tương đương
+\[
+	a^4 - a^3b + a^2b^2 - ab^3 + b^4 \ge a^2b^2 \Leftrightarrow a^4 + b^4 \ge a^3b + ab^3.
+\]
+Sử dụng bất đẳng thức AM - GM bộ bốn số ta có
+\[
+	a^3b \le \frac{a^4 + a^4 + a^4 + b^4}{4},\ ab^3 \le \frac{a^4 + b^4 + b^4 + b^4}{4}.
+\]
+Cộng hai bất đẳng thức trên theo vế ta có ngay $a^4 + b^4 \ge a^3b + ab^3$. Bổ đề được chứng minh.
+\end{proof}
+\end{mybox}
+
+Sử dụng bổ để kết hợp với giả thiết $abc = 1$ ta có
+\begin{align*}
+\frac{ab}{a^5 + b^5 + ab} \le \frac{ab}{a^2b^2(a + b) + ab} = \frac{1}{ab(a + b) + 1} = \frac{abc}{ab(a + b + c)} = \frac{c}{a + b + c}
+\end{align*}
+Tương tự ta có 
+\[
+	\frac{bc}{b^5 + c^5 + bc} \le \frac{a}{a + b + c},\ \frac{ca}{c^5 + a^5 + ca} \le \frac{b}{a + b + c}
+\]
+Cộng ba bất đẳng thức trên lại theo vế ta thu được
+\[
+	\frac{ab}{a^5 + b^5 + ab} + \frac{bc}{b^5 + c^5 + bc} + \frac{ca}{c^3 + a^3 + ca} \le 
+	\frac{c + a + b}{a + b + c} = 1.
+\]
+Đẳng thức xảy ra khi và chỉ khi $a = b = c = 1$.
+\end{problem}

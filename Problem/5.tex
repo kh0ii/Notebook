@@ -1,0 +1,28 @@
+\begin{problem}
+	Cho các số thực dương $a, b, c$ thỏa mãn $a + b + c = 2$. Chứng minh rằng
+	$$
+		\sqrt{\frac{bc}{2a + bc}} + \sqrt{\frac{ca}{2b + ca}} + \sqrt{\frac{ab}{2c + ab}}
+		\le \frac{3}{2}
+	$$
+
+	\solution
+
+	Ta có:
+
+	\begin{align*}
+		\sqrt{\frac{bc}{2a + bc}} &= \sqrt{\frac{bc}{2(2 - b - c) + bc}}
+		= \sqrt{\frac{bc}{4 - 2b - 2c + bc}} = \sqrt{\frac{bc}{(2 - b)(2 - c)}} \\
+		&= \sqrt{\frac{bc}{(a + c)(a + b)}} 
+		\le \frac{1}{2}.\left(\frac{b}{a + b} + \frac{c}{a + c}\right)
+	\end{align*}
+
+	Tương tự ta có $\displaystyle \sqrt{\frac{ca}{2b + ca}} \le \frac{1}{2}.\left(\frac{c}{b + c} + \frac{a}{b + a}\right)$, $\displaystyle \sqrt{\frac{ab}{2c + ab}} \le \frac{1}{2}.\left(\frac{a}{c + a} + \frac{b}{c + b}\right)$
+
+	Cộng hai vế của các BĐT trên ta được:
+
+	$$
+		VT \le \frac{1}{2}.\left(\frac{b}{a + b} + \frac{c}{a + c} + \frac{c}{b + c} + \frac{a}{b + a} + \frac{a}{c + a} + \frac{b}{c + b}\right) = \frac{3}{2}
+	$$
+	Đẳng thức xảy ra khi và chỉ khi $\displaystyle a = b = c = \frac{2}{3}$
+\end{problem}
+

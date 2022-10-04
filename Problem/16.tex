@@ -1,0 +1,34 @@
+\begin{problem}		
+	Cho ba số thực dương $a, b, c$. Chứng minh rằng:
+	$$
+		\frac{a}{bc(c + a)} + \frac{b}{ca(a + b)} + \frac{c}{ab(b + c)}
+		\ge \frac{27}{2(a + b + c)^2}
+	$$
+	\solution
+	
+	Áp dụng bất đẳng thức Cauchy - Schwarz dạng cộng mẫu ta có:
+	\begin{align*}
+		&\frac{a}{bc(c + a)} + \frac{b}{ca(a + b)} + \frac{c}{ab(b + c)} 
+		= \frac{a^2}{abc(c + a)} + \frac{b^2}{abc(a + b)} + \frac{c^2}{abc(b + c)} \\
+		&\ge \frac{(a + b + c)^2}{2abc(a + b + c)} 
+		= \frac{(a + b + c)^3}{2abc(a + b + c)^2}
+		= \frac{\frac{(a + b + c)^3}{abc}}{2(a + b + c)^2}
+	\end{align*}
+
+	Giờ ta chỉ cần chứng minh 
+	$$
+		\frac{(a + b + c)^3}{abc} \ge 27
+	$$
+	hay 
+	$$
+		(a + b + c)^3 \ge 27abc
+	$$
+
+	Áp dụng bất đẳng thức AM - GM ta có:
+	$$
+		a + b + c \ge 3\sqrt[3]{abc}
+		\Rightarrow (a + b + c)^3 \ge 27abc.
+	$$
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+	
+\end{problem}		

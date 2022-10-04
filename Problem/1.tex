@@ -1,0 +1,38 @@
+\begin{problem}
+    Chứng minh các bất đẳng thức:
+    \begin{enumerate}[(a)]
+        \item $a^4 + b^4 + c^4 \ge a^3b + b^3c + c^3a$ với $a \ge b \ge c$,
+        \item $3abc(a + b + c) \le 1$ với $ab + bc + ca = 1$.
+    \end{enumerate}
+
+    \solution
+
+    \begin{enumerate}[(a)]
+    \item 
+        Xét hiệu 
+            \begin{align*}
+            &a^4 + b^4 + c^4 - a^3b - b^3c - c^3a \\ 
+            &= a^3(a - b) + b^3(b - c) + c^3(c - a) \\
+            &= a^3(a - b) - b^3(a - b) + b^3(a - c) - c^3(a - c) \\
+            &= (a - b)(a^3 - b^3) + (a - c)(b^3 - c^3) \ge 0
+            \end{align*}
+
+        Đẳng thức xảy ra khi và chỉ khi $a = b = c$. \\
+
+    \item 
+        Vì $ab + bc + ca = 1 \Rightarrow (ab + bc + ca)^2 = 1$
+
+        Xét hiệu
+            \begin{align*}
+            &(ab + bc + ca)^2 - 3abc(a + b + c) \\
+            &= a^2b^2 + b^2c^2 + c^2a^2 + 2a^2bc + 2b^2ca + 2c^2ab - 3a^2bc - 3b^2ca - 3c^2ab \\
+            &= a^2b^2 + b^2c^2 + c^2a^2 - a^2bc - b^2ca - c^2ab \\
+            &= \frac{2a^2b^2 + 2b^2c^2 + 2c^2a^2 - 2a^2bc - 2b^2ca - 2c^2ab}{2} \\
+            &= \frac{(ab - bc)^2 + (bc - ca)^2 + (ca - ab)^2}{2} \ge 0
+            \end{align*}
+
+        nên $3abc(a + b + c) \le (ab + bc + ca)^2 = 1$.
+        Đẳng thức xảy ra khi và chỉ khi $a = b = c = \displaystyle \frac{1}{\sqrt{3}}$
+    \end{enumerate}
+
+\end{problem}

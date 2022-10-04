@@ -1,0 +1,33 @@
+\begin{problem}
+	Cho $a, b, c > 1$. Chứng minh rằng
+	\[
+		\frac{a}{\sqrt{b} - 1} + \frac{b}{\sqrt{c} - 1} + \frac{c}{\sqrt{a} - 1} \ge 12.
+	\]
+	Đẳng thức xảy ra khi nào?
+
+	\credit{(THPT Chuyên - TP. Hải Phòng, 2005 - 2006)}
+
+	\solution 
+
+	Áp dụng bất đẳng thức AM - GM cho 3 số thực dương ta được
+	\[
+		\frac{a}{\sqrt{b} - 1} + \frac{b}{\sqrt{c} - 1} + \frac{c}{\sqrt{a} - 1} \ge 
+		3\sqrt[3]{\frac{abc}{(\sqrt{a} - 1)(\sqrt{b} - 1)(\sqrt{c} - 1)}}
+	\]
+
+	Ta sẽ đi chứng minh $\displaystyle \frac{a}{\sqrt{a} - 1} \ge 4$. Thật vậy
+	\[
+		(\sqrt{a} - 2)^2 \ge 0 \Rightarrow a - 4\sqrt{a} + 4 \ge 0 \Rightarrow 
+		a \ge 4(\sqrt{a} - 1) \Rightarrow \frac{a}{\sqrt{a} - 1} \ge 4.
+	\]
+	Tương tự ta có $\displaystyle \frac{b}{\sqrt{b} - 1} \ge 4,\ \frac{c}{\sqrt{c} - 1} \ge 4$.
+
+	Vậy ta có
+	\[
+		VT \ge 3\sqrt[3]{\frac{abc}{(\sqrt{a} - 1)(\sqrt{b} - 1)(\sqrt{c} - 1)}} \ge 3\sqrt[3]{4.4.4}
+		= 3.4 = 12.
+	\]
+
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi $a = b = c = 4$.
+
+\end{problem}

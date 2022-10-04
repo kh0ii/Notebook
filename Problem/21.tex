@@ -1,0 +1,23 @@
+\begin{problem}
+	Với $a, b, c > 0$ thỏa mãn $a + b + c = 3$, chứng minh rằng
+	$$
+		\sqrt{3a^2 + 6b^2} + \sqrt{3b^2 + 6c^2} + \sqrt{3c^2 + 6a^2} \ge 9.
+	$$
+	\solution
+
+	Áp dụng bất đẳng thưc Cauchy - Schwarz ta có:
+	$$
+		3a^2 + 6b^2 = 3(a^2 + b^2) = (1 + (\sqrt{2})^2)(a^2 + (b\sqrt{2})^2) \ge (a + 2b)^2.
+	$$
+	vậy
+	$$
+		\sqrt{3a^2 + 6b^2} \ge a + 2b
+	$$
+	Tương tự ta có $$\sqrt{3b^2 + 6c^2} \ge b + 2c,\ \sqrt{3c^2 + 6a^2} \ge c + 2a.$$
+
+	Suy ra 
+	$$
+		\sqrt{3a^2 + 6b^2} + \sqrt{3b^2 + 6c^2} + \sqrt{3c^2 + 6a^2} \ge 3(a + b + c) = 9.
+	$$
+	Vậy ta có điều phải chứng minh.
+\end{problem}

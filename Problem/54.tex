@@ -1,0 +1,42 @@
+\begin{problem}
+	Với mọi $x, y, z$ dương, hãy chứng minh
+	\[
+		\frac{x^3}{yz} + \frac{y^3}{zx} + \frac{z^3}{xy} \ge x + y + z.
+	\]
+	\credit{Canada MO 2002}
+	\solution
+
+	\textbf{Cách 1:}
+
+	Sử dụng bất đẳng thức AM - GM bộ ba số ta có
+	\[
+		\frac{x^3}{yz} + y + z \ge 3x,\ \frac{y^3}{zx} + z + x \ge 3y,\ \frac{z^3}{xy} + x + y \ge 3z
+	\]
+	Cộng ba bất đẳng thức trên theo vế ta thu được
+	\begin{align*}
+		\frac{x^3}{yz} + \frac{y^3}{zx} + \frac{z^3}{xy} + 2(x + y + z) \ge 3(x + y + z) \\
+		\Rightarrow \frac{x^3}{yz} + \frac{y^3}{zx} + \frac{z^3}{xy} \ge x + y + z.
+	\end{align*}
+	Ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $x = y = z$.
+
+	\textbf{Cách 2:}
+	
+	Sử dụng bất đẳng thức Cauchy - Schwarz dạng phân thức ta có
+	\[
+		\frac{x^3}{yz} + \frac{y^3}{zx} + \frac{z^3}{xy} = \frac{x^4}{xyz} + \frac{y^4}{yzx} + \frac{z^4}{zxy} \ge \frac{(x^2 + y^2 + z^2)^2}{3xyz}.
+	\]
+	Ta sẽ chứng minh 
+	\[
+		\frac{(x^2 + y^2 + z^2)^2}{3xyz} \ge \frac{3(x^2 + y^2 + z^2)}{x + y + z}
+	\]
+	Thật vậy, theo bất đẳng thức Cauchy - Schwarz ta có
+	\[
+		(x^2 +y^2 + z^2)(x + y + z) \ge 3\sqrt[3]{x^2 y^2 z^2} \cdot 3\sqrt[3]{xyz} = 9xyz
+		\Leftrightarrow \frac{(x^2 + y^2 + z^2)^2}{3xyz} \ge \frac{3(x^2 + y^2 + z^2)}{x + y + z}
+	\]
+	Do $3(x^2 + y^2 + z^2) \ge (x + y + z)^2$ nên
+	\[
+		\frac{(x^2 + y^2 + z^2)^2}{3xyz} \ge \frac{3(x^2 + y^2 + z^2)}{x + y + z} \ge \frac{(x + y + z)^2}{x + y + z} = x + y + z
+	\]
+	Dấu bằng xảy ra khi và chỉ khi $x = y = z$.
+\end{problem}
