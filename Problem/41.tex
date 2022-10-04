@@ -1,0 +1,17 @@
+\begin{problem}
+	Cho $a, b, c$ là các số thực không âm bất kì. Chứng minh rằng
+	\[
+		a^2 + b^2 + c^2 + 2abc + 1 \ge 2(ab + bc + ca).
+	\]
+	\solution
+
+	Bất đẳng thức cần chứng minh tương đương
+	\begin{align*}
+		&a^2 + b^2 + c^2 + 2abc + 1 \ge 2(ab + bc + ca) \\
+		\Leftrightarrow\ &a^2 + b^2 + c^2 + 2abc + 1 - 2ab - 2bc - 2ca \ge 0 \\
+		\Leftrightarrow\ &(a^2 - 2ab + b^2) + (c^2 - 2c + 1) + 2abc - 2bc - 2ca + 2c \ge 0 \\ 
+		\Leftrightarrow\ &(a - b)^2 + (c - 1)^2 + 2c(a - 1)(b - 1) \ge 0
+	\end{align*}
+
+	Theo nguyên lí Dirichlet, trong ba số $a - 1$; $b - 1$ và $c - 1$ luôn tồn tại hai số cùng không âm hoặc cùng không dương. Không mất tính tổng quát giả sử $(a - 1)(b - 1) \ge 0$. Khi đó $2c(a - 1)(b - 1) \ge 0$ nên ta có điều phải chứng minh.
+\end{problem}

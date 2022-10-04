@@ -1,0 +1,27 @@
+\begin{problem}
+	Cho $a < b < c < d$ và $x = (a + b)(c + d);\ y = (a + c)(b + d);\ z = (a + d)(b + c)$.
+
+	Chứng minh rằng $x < y < z$.
+
+	\solution
+	
+	Xét hiệu $y - x$ ta có:
+	\begin{align*}
+		(a + c)(b + d) - (a + b)(c + d) &= ab + ad + bc + cd - ac - ad - bc - bd \\
+		&= ab + cd - ac - bd = d(c - b) + a(b - c) \\
+		&= d(c - b) - a(c - b) = (d - a)(c - b)
+	\end{align*}
+	Vì $d > a$ và $c > b$ nên $(d - a)(c - b) > 0 \Rightarrow y - x > 0$.
+	Vậy $y > x \ (1)$.
+
+	Xét hiệu $z - y$ ta có:
+	\begin{align*}
+		(a + d)(b + c) - (a + b)(c + d) &= ab + ac + bd + cd - ac - ad - bc - bd \\ 
+		&= ab + cd - ad - bc = c(d - b) + a(b - d) \\
+		&= c(d - b) - a(d - b) = (c - a)(d - b)
+	\end{align*}
+	Vì $c > a$ và $d > b$ nên $(c - a)(d - b) > 0 \Rightarrow z - y > 0$.
+	Vậy $z > y \ (2)$.
+
+	Từ $(1)$ và $(2)$ ta có điều phải chứng minh.
+\end{problem}

@@ -1,0 +1,28 @@
+\begin{problem}
+	Cho $a, b$ là các số thực dương. Chứng minh rằng
+	\[
+		\frac{1}{a^2} + \frac{1}{b^2} + \frac{4}{a^2 + b^2} \ge \frac{32(a^2 + b^2)}{(a + b)^4}
+	\]
+	\credit{Inequalities with Beautiful Solutions}
+	\solution
+
+	Áp dụng bất đẳng thức AM - GM ta có
+	\[
+		\left(\frac{1}{a^2} + \frac{1}{b^2}\right) + \frac{4}{a^2 + b^2}
+		\ge 2\sqrt{\left(\frac{1}{a^2} + \frac{1}{b^2}\right)\frac{4}{a^2 + b^2}}
+		= \frac{4}{ab}.
+	\]
+	Vậy ta chỉ cần chứng minh 
+	\[
+		\frac{4}{ab} \ge \frac{32(a^2 + b^2)}{(a + b)^4}
+	\]
+	Bất đẳng thức trên tương đương
+	\[
+		(a + b)^4 \ge 8ab(a^2 + b^2)
+	\]	
+	luôn đúng do 
+	\[
+		(a + b)^4 - 8ab(a^2 + b^2) = (a - b)^4 \ge 0.
+	\]
+	Đẳng thức xảy ra khi và chỉ khi $a = b$.
+\end{problem}

@@ -1,0 +1,23 @@
+\begin{problem}
+    Với $a, b, c, d \ge 0$, chứng minh rằng
+    $$
+        abc + bcd + cda + dab \le \frac{1}{16}(a + b + c + d)^3
+    $$
+    \solution
+    
+    Ta có:
+    $$
+        abc + bcd + cda + dab = bc(a + d) + ad(b + c)
+    $$
+    Áp dụng bất đẳng thức $\displaystyle xy \le \frac{(x + y)^2}{4}$ ta được:
+    $$
+        bc(a + d) + ad(b + c) \le \frac{(b + c)^2(a + d) + (a + d)^2(b + c)}{4} =
+        \frac{(b + c)(a + d)(a + b + c + d)}{4}
+    $$
+    Áp dụng bất đẳng thức này một lần nữa ta được
+    $$
+        \frac{(b + c)(a + d)(a + b + c + d)}{4} \le \frac{(a + b + c + d)^2(a + b + c + d)}{16}
+        = \frac{1}{16}(a + b + c + d)^3.
+    $$
+    Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c = d$.
+\end{problem}

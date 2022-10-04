@@ -1,0 +1,27 @@
+\begin{problem}
+	Cho $a, b, c$ là các số thực dương thỏa mãn $a + b + c = 3$. Chứng minh
+	\[
+		\sqrt{a(b + 3c)} + \sqrt{b(c + 3a)} + \sqrt{c(a + 3b)} \le 6.
+	\]
+	\solution
+
+	Bất đẳng thức cần chứng minh tương đương
+	\[
+		\sqrt{4a(b + 3c)} + \sqrt{4b(c + 3a)} + \sqrt{4c(a + 3b)} \le 12.
+	\]
+	Áp dụng bất đẳng thức AM - GM dạng $\displaystyle \sqrt{ab} \le \frac{a + b}{2}$ ta có
+	$$
+		\sqrt{4a(b + 3c)} \le \frac{4a + b + 3c}{2},\, 
+		\sqrt{4b(c + 3a)} \le \frac{4b + c + 3a}{2},\,
+		\sqrt{4c(a + 3b)} \le \frac{4c + a + 3b}{2}
+	$$
+
+	Cộng hai vế của các bất đẳng thức trên ta được
+	\[
+		\sqrt{4a(b + 3c)} + \sqrt{4b(c + 3a)} + \sqrt{4c(a + 3b)} \le 
+		\frac{4a + b + 3c}{2} + \frac{4b + c + 3a}{2} + \frac{4c + a + 3b}{2} =
+		\frac{8(a + b + c)}{2} = 12.
+	\]
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi $a = b = c = 1$.
+
+\end{problem}

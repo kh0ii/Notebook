@@ -1,0 +1,26 @@
+\begin{problem}
+	Chứng minh rằng với mọi số thực dương tùy ý $a, b, c$ ta luôn có
+	\[
+		\frac{a}{b + c} + \frac{b}{c + a} + \frac{c}{a + b} \ge \frac{a}{a + b} + \frac{b}{b + c} + \frac{c}{c + a}.
+	\]
+	\solution 
+
+	Bất đẳng thức cần chứng minh tương đương
+	\[
+		\frac{a - b}{b + c} + \frac{b - c}{c + a} + \frac{c - a}{a + b} \ge 0.
+	\]
+	Cộng 1 vào từng hạng tử ở vế phải ta được
+	\[
+		\frac{(b + c) + a - b}{b + c} + \frac{(c + a) + b - c}{c + a} + \frac{(a + b) + c - a}{a + b} \ge 3
+	\]
+	hay 
+	\[
+		\frac{c + a}{b + c} + \frac{a + b}{c + a} + \frac{b + c}{a + b} \ge 3.
+	\]
+	Áp dụng bất đẳng thức AM - GM cho 3 số thực dương ta có
+	\[
+		\frac{c + a}{b + c} + \frac{a + b}{c + a} + \frac{b + c}{a + b} \ge 
+		3.\sqrt[3]{\frac{c + a}{b + c}.\frac{a + b}{c + a}.\frac{b + c}{a + b}} = 3
+	\]
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi $a = b = c$.
+\end{problem}

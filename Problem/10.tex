@@ -1,0 +1,35 @@
+\begin{problem}
+	Chứng minh các bất đẳng thức:
+	\begin{enumerate}[a)]
+		\item 
+		$\displaystyle \frac{a}{a^3 + 2} \le \frac{1}{3}$ với $a > 0$.
+		\item 
+		$\displaystyle \frac{a}{b} + \frac{b}{a} \ge \frac{a + 1}{b + 1} + \frac{b + 1}{a + 1}$
+		với $a, b > 0$. 
+	\end{enumerate}
+
+	\solution
+	\begin{enumerate}[a)]
+		\item 
+		Áp dụng BĐT AM - GM ta có:
+
+		$a^3 + 2 = a^3 + 1 + 1 \ge 3\sqrt[3]{a^3.1.1} = 3a$.
+
+		Suy ra $\displaystyle \frac{a}{a^3 + 2} \le \frac{a}{3a} = \frac{1}{3}$, ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = 1$.
+		\item 
+		Ta có: $\displaystyle \frac{x}{y} + \frac{x}{y} - 2 = \frac{x^2 + y^2 + 2xy}{xy} 
+		= \frac{(x - y)^2}{xy}$
+
+		Ta có $\displaystyle \frac{a}{b} + \frac{b}{a}
+		\ge \frac{a + 1}{b + 1} + \frac{b + 1}{a + b}
+		\Leftrightarrow \frac{a}{b} + \frac{b}{a} - 2
+		\ge \frac{a + 1}{b + 1} + \frac{b + 1}{a + b} - 2 \\ 
+		\Leftrightarrow \frac{(a - b)^2}{ab} \ge \frac{(a - b)^2}{(a + 1)(b + 1)} \\  
+		\Leftrightarrow ab \le (a + 1)(b + 1)$ (luôn đúng).
+
+		Suy ra $\displaystyle \frac{a}{b} + \frac{b}{a}
+		\ge \frac{a + 1}{b + 1} + \frac{b + 1}{a + b}$ luôn đúng, ta có điều phải chứng minh.
+
+		Đẳng thức xảy ra khi và chỉ khi $a = b$.
+	\end{enumerate}
+\end{problem}

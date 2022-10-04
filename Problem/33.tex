@@ -1,0 +1,24 @@
+\begin{problem}
+	Cho $a, b \in \mathbb{R}$ thỏa mãn $a^2 + b^2 = 2$. Tìm giá trị nhỏ nhất của
+	\[
+		P = ab + 3(a + b)
+	\]
+	\solution
+
+	Ta có $a^2 + b^2 \ge 2ab$ nên $a^2 + b^2 + 2ab \le 2(a^2 + b^2) = 4$, vậy $(a + b)^2 \le 4 \Rightarrow -2 \le a + b \le 2$.
+
+	Mà $(a + b)^2 = a^2 + b^2 + 2ab = 2 + 2ab$ nên $ab = \displaystyle \frac{(a + b)^2 - 2}{2}$.
+
+	Vậy $P = \displaystyle \frac{(a + b)^2 - 2}{2} + 3(a + b)$.
+
+	Xét tổng $2P + 10$ ta có
+	\begin{align*}
+		2P + 10 &= (a + b)^2 - 2 + 6(a + b) + 10 \\
+			    &= (a + b)^2 + 4(a + b) + 4 + 2(a + b) + 4 \\
+			    &= (a + b + 2)^2 + 4 + 2(a + b) \\
+			    &\ge 0 + 4 - 4 = 0.
+ 	\end{align*}
+ 	Suy ra $2P \ge -10$ hay $P \ge -5$.
+
+ 	Vậy $P$ đạt giá trị nhỏ nhất bằng $-5$ khi và chỉ khi $a = b = -1$.
+\end{problem}

@@ -1,0 +1,15 @@
+\begin{problem}
+	Cho $x, y$ là các số dương thỏa mãn $x + y = 2$. Chứng minh 
+	\[
+		x^3y^3(x^3 + y^3) \le 2.
+	\]
+	\solution
+
+	Vì $x^3 + y^3 = (x + y)(x^2 - xy + y^2) = 2(x^2 - xy + y^2)$ nên ta chỉ cần chứng minh $x^3y^3(x^2 - xy + y^2) \le 1$.
+
+	Áp dụng bất đẳng thức AM - GM bộ 4 số dạng $\displaystyle abcd \le \left(\frac{a + b + c + d}{4}\right)^4$ ta có
+	\[
+		x^3y^3(x^2 - xy + y^2) = (xy)(xy)(xy)(x^2 - xy + y^2) \le \left(\frac{xy + xy + xy + x^2 - xy + y^2}{4}\right)^2 = \left[\frac{(x + y)^2}{4}\right] = 1
+	\]
+	Ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $x = y = 1$.
+\end{problem}

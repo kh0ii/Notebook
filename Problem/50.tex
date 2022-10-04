@@ -1,0 +1,39 @@
+\begin{problem}
+
+Cho ba số thực dương $a, b, c$. Chứng minh rằng
+\[
+	\frac{1}{a^3 + b^3 + abc} + \frac{1}{b^3 + c^3 + abc} + \frac{1}{c^3 + a^3 + abc} \le \frac{1}{abc}
+\]
+\credit{USAMO 1997}
+
+\solution
+
+\begin{mybox}
+\begin{lemma}
+Với hai số thực dương $a, b$ tùy ý, ta có: $a^3 + b^3 \ge ab(a + b)$.	
+\end{lemma}
+
+\begin{proof}
+Áp dụng bất đẳng thức AM - GM ta có
+\[
+	\frac{a^3 + a^3 + b^3}{3} \ge \sqrt[3]{a^3 a^3 b^3} = a^2b,\ \frac{a^3 + b^3 + b^3}{3} \ge \sqrt[3]{a^3 b^3 b^3} = ab^2 
+\]
+Cộng hai bất đẳng thức này lại ta được $a^3 + b^3 \ge a^2b + ab^2 = ab(a + b)$.
+
+Bổ đề được chứng minh.
+\end{proof}
+\end{mybox}
+
+Sử dụng bổ đề vừa chứng minh ta được
+\begin{align*}
+	\frac{1}{a^3 + b^3 + abc} + \frac{1}{b^3 + c^3 + abc} + \frac{1}{c^3 + a^3 + abc} \le
+	\frac{1}{ab(a + b) + abc} + \frac{1}{bc(b + c) + abc} + \frac{1}{ca(c + a) + abc} \\ 
+	= \frac{1}{ab(a + b + c)} + \frac{1}{bc(b + c + a)} + \frac{1}{ca(c + a + b)} =
+	\frac{1}{abc}\left(\frac{c}{a + b + c} + \frac{a}{b + c + a} + \frac{b}{c + a + b}\right) = \frac{1}{abc}
+\end{align*}
+
+Bài toán được chứng minh hoàn tất.
+
+Đẳng thức xảy ra khi và chỉ khi $a = b = c$.
+
+\end{problem}

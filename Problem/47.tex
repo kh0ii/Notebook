@@ -1,0 +1,32 @@
+\begin{problem}
+    Cho $a, b, c$ là các số thực dương có $abc = 1$. Chứng minh
+    $$
+        \frac{1}{a^2} + \frac{1}{b^2} + \frac{1}{c^2} + 3 \ge 2(a + b + c)
+    $$ 
+    \solution
+
+    Không mất tính tổng quát, ta giả sử 
+    $$
+        \begin{cases}
+            a - 1 &\ge 0 \\ 
+            b - 1 &\ge 0
+        \end{cases}
+        \quad \quad \text{hoặc} \quad \quad
+        \begin{cases}
+            a - 1 &\le 0 \\ 
+            b - 1 &\le 0
+        \end{cases}
+    $$
+    Khi đó $(a - 1)(b - 1) \ge 0$.
+    
+    Vì $abc = 1$ nên $\displaystyle c = \frac{1}{ab},\ \frac{1}{c^2} = a^2 b^2$. Vậy bất đẳng thức cần chứng minh tương đương
+    \begin{align*}
+        &\frac{1}{a^2} + \frac{1}{b^2} + a^2 b^2 + 3 \ge 2\left(a + b + \frac{1}{ab}\right) \\
+        \Leftrightarrow \ &\frac{1}{a^2} + \frac{1}{b^2} + a^2 b^2 + 3 - 2a - 2b - \frac{2}{ab} \ge 0 \\
+        \Leftrightarrow \ &\left(\frac{1}{a^2} - \frac{2}{ab} + \frac{1}{b^2}\right) + (a^2 b^2 - 2ab + 1) + (2ab - 2a - 2b + 2) \ge 0 \\
+        \Leftrightarrow \ &\left(\frac{1}{a} - \frac{1}{b}\right)^2 + (ab - 1)^2 + 2(a - 1)(b - 1) \ge 0 \ \text{(đúng)}
+    \end{align*}
+
+    Như vậy ta có điều phải chứng minh. Dấu bằng xảy ra khi $a = b = c = 1$.
+
+\end{problem}

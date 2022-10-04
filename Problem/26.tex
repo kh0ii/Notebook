@@ -1,0 +1,28 @@
+\begin{problem}
+	Với $a, b, c > 0$, chứng minh rằng
+	$$
+		(a^2 + b^2 + c^2)\left(\frac{1}{a^2} + \frac{1}{b^2} + \frac{1}{c^2}\right) \ge 
+		(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right).
+	$$
+	\solution
+
+	Áp dụng bất đẳng thức Cauchy - Schwarz ta có
+	$$
+		3(a^2 + b^2 + c^2) = (1 + 1 + 1)(a^2 + b^2 + c^2) \ge (a + b + c)^2
+	$$
+	Tương tự ta có 
+	$$
+		3\left(\frac{1}{a^2} + \frac{1}{b^2} + \frac{1}{c^2}\right) \ge 
+		\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)^2
+	$$
+	Vậy
+	$$
+		VT \ge \frac{1}{9}\left[(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)\right]^2
+	$$
+	Áp dụng bất đẳng thức $\displaystyle (a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) \ge 9$ ta được
+	$$
+		VT \ge \frac{1}{9}.9.(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)
+		= (a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)
+	$$
+	Vậy ta có điều phải chứng minh.
+\end{problem}

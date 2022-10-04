@@ -1,0 +1,22 @@
+\begin{problem}
+	Cho $a, b, c$ không âm thỏa mãn $a + b + c \ge abc$. Chứng minh rằng
+	\[
+		a^2 + b^2 + c^2 \ge abc.
+	\]
+	\credit{Irish MO 1997}
+	\solution
+
+	Nếu một trong ba số $a, b, c$ có một số bằng $0$ thì bất đẳng thức cần chứng minh luôn đúng. Vì vậy ta sẽ chỉ xét trường hợp $a, b, c > 0$.
+
+	Giả sử bất đẳng thức cần chứng minh sai, hay $abc > a^2 + b^2 + c^2$. Mà $a , b, c > 0$ nên $abc > a^2 + b^2 + c^2 > a^2 \Rightarrow bc > a$.
+
+	Tương tự ta có $ca > b,\ ab > c \Rightarrow a + b + c < ab + bc + ca$.
+
+	Lại có $a^2 + b^2 + c^2 \ge ab + bc + ca$ nên
+	$$
+		abc > a^2 + b^2 + c^2 > ab + bc + ca > a + b + c
+	$$ 
+	$\Rightarrow abc > a + b + c$ (mâu thuẫn với giả thiết $a + b + c \ge abc$).
+
+	Vậy bất đẳng thức cần chứng minh luôn đúng.
+\end{problem}

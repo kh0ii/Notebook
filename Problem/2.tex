@@ -1,0 +1,37 @@
+\begin{problem}
+Cho $x, y > 0$ thỏa mãn $x + y = 2$. Chứng minh rằng:
+
+\begin{enumerate}[(a)]
+    \item $xy(x^2 + y^2) \le 2,$
+    \item $\displaystyle \frac{1}{x^2 + y^2} + \frac{1}{xy} \ge \frac{3}{2}.$
+\end{enumerate}
+
+\solution
+
+\begin{enumerate}[(a)]
+    \item
+    Áp dụng bất đẳng thức $\displaystyle ab \le \frac{(a + b)^2}{4}$, ta có:
+    $$
+        xy(x^2 + y^2) = \frac{2xy(x^2 + y^2)}{2} \le \frac{(2xy + x^2 + y^2)^2}{8} = 
+        \frac{(x + y)^4}{8} = \frac{16}{8} = 2.
+    $$
+    Đẳng thức xảy ra khi và chỉ khi $x = y = 1$.
+
+    \item
+    Ta có:
+    $$
+        \frac{1}{x^2 + y^2} + \frac{1}{xy} = \frac{1}{x^2 + y^2} + \frac{1}{2xy} + \frac{1}{2xy}
+    $$
+
+    Áp dụng bất đẳng thức $\displaystyle \frac{1}{a} + \frac{1}{b} \ge \frac{4}{a + b}$ và 
+    $\displaystyle \frac{(a + b)^2}{4} \ge ab$, ta có:
+
+    \begin{align}
+        &\frac{1}{x^2 + y^2} + \frac{1}{2xy} \ge \frac{4}{x^2 + y^2 + 2xy} = \frac{4}{(x + y)^2} = 1 \\
+        &\frac{1}{2xy} \ge \frac{1}{\dfrac{(x + y)^2}{2}} = \frac{1}{2}
+    \end{align}
+
+    Cộng các vế của (1) và (2), ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $x = y = 1$
+\end{enumerate}
+
+\end{problem}

@@ -1,0 +1,28 @@
+\begin{problem}
+	Cho $a, b, c$ là các số dương thỏa mãn $a + 2b + 3c \ge 20$. Chứng minh
+	\[
+		a + b + c + \frac{3}{a} + \frac{9}{2b} + \frac{4}{c} \ge 13.
+	\]
+	\solution
+
+	Áp dụng bất đẳng thức AM - GM ta có
+	\[
+		a + \frac{3}{a} = \left( \frac{3a}{4} + \frac{3}{a} \right) + \frac{a}{4} \ge
+		2.\sqrt{\frac{9}{4}} + \frac{a}{4} = 3 + \frac{a}{4}.
+	\]
+	\[
+		b + \frac{9}{2b} = \left( \frac{b}{2} + \frac{9}{2b} \right) + \frac{b}{2} \ge 
+		2.\sqrt{\frac{9}{4}} + \frac{b}{2} = 3 + \frac{2b}{4}.
+	\]
+	\[
+		c + \frac{4}{c} = \left( \frac{c}{4} + \frac{4}{c} \right) + \frac{3c}{4} \ge 
+		2.\sqrt{\frac{4}{4}} + \frac{3c}{4} = 2 + \frac{3c}{4}.
+	\]
+
+	Cộng hai vế của các bất đẳng thức trên ta được
+	\[
+		a + b + c + \frac{3}{a} + \frac{9}{2b} + \frac{4}{c} \ge 
+		3 + 3 + 2 + \frac{a + 2b + 3c}{4} \ge 8 + \frac{20}{4} = 13.
+	\]
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = 2,\, b = 3,\, c = 4$.
+\end{problem}

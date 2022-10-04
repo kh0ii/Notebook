@@ -1,0 +1,30 @@
+\begin{problem}
+	Cho các số thực $a, b, c$ sao cho $ab + bc + ca = 3$. Chứng minh rằng:
+	$$
+		(3a^2 + 1)(3b^2 + 1)(3c^2 + 1) \ge 64.
+	$$
+	\solution
+
+	Đặt 
+	$$
+		a = \frac{x}{\sqrt{3}};\ b = \frac{y}{\sqrt{3}};\ c = \frac{z}{\sqrt{3}}
+	$$
+	Bất đẳng thức cần chứng minh trở thành $(x^2 + 1)(y^2 + 1)(z^2 + 1) \ge 64$ với mọi $xy + yz + zx = 9$.
+
+	Áp dụng bất đẳng thức Cauchy - Schwarz ta có:
+	\begin{align*}
+	(x^2 + 1)(y^2 + 1)(z^2 + 1) &= (x^2 + 1)[(y^2 + 1)(z^2 + 1)] = (x^2 + 1^2)[(yz)^2 + y^2 + z^2 + 1]\\
+								&= (x^2 + 1^2)[y^2 + 2yz + z^2 + (yz)^2 - 2yz + 1]\\
+								&= (x^2 + 1^2)[(y + z)^2 + (yz - 1)^2]\\
+								&\ge [x(y + z) + (yz - 1)]^2 = 8^2 = 64
+	\end{align*}
+	Dấu bằng xảy ra khi và chỉ khi $xy + yz + zx = 9$ và
+	\begin{align*}
+		\frac{y + z}{x} = yz - 1
+		&\Leftrightarrow y + z = (yz - 1)x = \frac{(yz - 1)(9 - yz)}{y + z} \\ 
+		&\Leftrightarrow (y + z)^2 + (yz - 1)(yz - 9) = 0 \\ 
+		&\Leftrightarrow (y - z)^2 + (yz - 3)^2 = 0 \\ 
+		&\Leftrightarrow y = z = \pm\sqrt{3}
+	\end{align*}
+	Từ $xy + yz + zx = 9$ ta có $x = y = z = \pm\sqrt{3}$, nên $a = b = c = \pm1$
+\end{problem}

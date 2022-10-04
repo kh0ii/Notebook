@@ -1,0 +1,43 @@
+\begin{problem}
+	Cho $a, b, x, y, z$ là các số thực dương, chứng minh rằng:
+	$$
+		\frac{x}{ay + bz} + \frac{y}{az + bx} + \frac{z}{ax + by} \ge \frac{3}{a + b}.
+	$$
+
+\solution
+
+Ta có:
+$$
+	\frac{x}{ay + bz} + \frac{y}{az + bx} + \frac{z}{ax + by}
+	= \frac{x^2}{axy + bxz} + \frac{y^2}{ayz + bxy} + \frac{z^2}{axz + byz}
+$$
+
+Áp dụng bất đẳng thức Cauchy - Schwarz dạng cộng mẫu ta được:
+
+\begin{align*}
+	\frac{x^2}{axy + bxz} + \frac{y^2}{ayz + bxy} + \frac{z^2}{axz + byz} &\ge 
+	\frac{(x + y + z)^2}{axy + bxz + ayz + bxy + axz + byz} \\ &= 
+	\frac{(x + y + z)^2}{(a + b)(xy + yz + zx)}
+\end{align*}
+
+Giờ ta cần chứng minh 
+$$\frac{(x + y + z)^2}{xy + yz + zx} \ge 3$$
+
+Ta có:
+$$\frac{(x + y + z)^2}{xy + yz + zx} = \frac{x^2 + y^2 + z^2 + 2(xy + yz + zx)}{(xy + yz + zx)}
+= 2 + \frac{x^2 + y^2 + z^2}{xy + yz + zx}$$
+
+Lại có 
+\begin{align*}
+x^2 + y^2 + z^2 \ge xy + yz + zx 
+&\Rightarrow 2(x^2 + y^2 + z^2) \ge 2(xy + yz + zx) \\
+&\Rightarrow x^2 - 2xy + y^2 + y^2 - 2yz + z^2 + z^2 - 2zx + x^2 \ge 0 \\
+&\Rightarrow (x - y)^2 + (y - z)^2 + (z - x)^2 \ge 0 \tag{luôn đúng} 
+\end{align*}
+
+Vậy 
+
+$$2 + \frac{x^2 + y^2 + z^2}{xy + yz + zx} \ge 2 + 1 = 3$$
+
+Ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $x = y = z$.
+\end{problem}

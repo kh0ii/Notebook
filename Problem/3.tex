@@ -1,0 +1,37 @@
+\begin{problem}
+Cho $x, y, z \ge 0$ thỏa mãn $x + y + z = 1$. Chứng minh rằng
+
+\begin{enumerate}[(a)]
+	\item $x^2 + y^2 + z^2 + 2\sqrt{3xyz} \le 1$,
+	\item $xyz(x^2 + y^2 + z^2) \le \displaystyle \frac{1}{81}$
+\end{enumerate}
+
+\solution
+
+\begin{enumerate}[(a)]
+\item
+	Vì $x + y + z = 1$,
+	$$
+		x^2 + y^2 + z^2 + 2\sqrt{3xyz} = x^2 + y^2 + z^2 + 2\sqrt{3xyz(x + y + z)}.
+	$$
+	Áp dụng bất đẳng thức $3abc(a + b + c) \le (ab + bc + ca)^2$ ta được:
+	\begin{align*}
+		& x^2 + y^2 + z^2 + 2\sqrt{3xyz(x + y + z)} \le x^2 + y^2 + z^2 + 2\sqrt{(xy + yz + zx)^2} \\
+		&= x^2 + y^2 + z^2 + 2(xy + yz + zx) = (x + y + z)^2 = 1.
+	\end{align*}
+	Đẳng thức xảy ra khi và chỉ khi $x = y = z = \displaystyle \frac{1}{3}$
+
+\item
+	Vì $x + y + z = 1$,
+	$$
+		xyz(x^2 + y^2 + z^2) = xyz(x + y + z)(x^2 + y^2 + z^2).
+	$$
+	Áp dụng bất đẳng thức $3abc(a + b + c) \le (ab + bc + ca)^2$ ta được:
+	\begin{align*}
+		&xyz(x + y + z)(x^2 + y^2 + z^2) \le \frac{(xy + yz + zx)^2(x^2 + y^2 + z^2)}{3} \\
+		&\overset{AM - GM}{\le} \frac{\displaystyle \frac{2(xy + yz + zx) + x^2 + y^2 + z^2}{27}}{3} 
+		= \frac{(x + y + z)^2}{81} = \frac{1}{81}
+	\end{align*}
+	Đẳng thức xảy ra khi và chỉ khi $x = y = z = \displaystyle \frac{1}{3}$
+\end{enumerate}
+\end{problem}

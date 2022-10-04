@@ -1,0 +1,27 @@
+\begin{problem}
+	Cho các số thực $x, y, z > 0$ thỏa mãn $x + 2y + 3z = 18$. Chứng minh rằng
+	\[
+		\frac{2y + 3z + 5}{1 + x} + \frac{3z + x + 5}{1 + 2y} + \frac{x + 2y + 5}{1 + 3z}
+		\ge \frac{51}{7}.
+	\]
+
+	\credit{(Vòng 2, THPT Chuyên Đại học Vinh, 2009 - 2010)}
+	\solution
+
+	Đặt $a = 1 + x,\ b = 1 + 2y,\ c = 1 + 3z$, theo giả thiết ta có $a + b + c = 21$.
+
+	$$
+		\frac{2y + 3z + 5}{1 + x} + \frac{3z + x + 5}{1 + 2y} + \frac{x + 2y + 5}{1 + 3z} = 
+		\frac{b + c + 3}{a} + \frac{c + a + 3}{b} + \frac{a + b + 3}{c} = 
+	$$
+	\[
+		\left(\frac{b}{a} + \frac{a}{b}\right) + \left(\frac{c}{a} + \frac{a}{c}\right) + \left(\frac{b}{c} + \frac{c}{b}\right) + 
+		3\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)  
+	\]
+	Áp dụng bất đẳng thức AM - GM và bất đẳng thức $\displaystyle \frac{1}{a} + \frac{1}{b} + \frac{1}{c} \ge \frac{9}{a + b + c}$ ta được
+
+	\[
+		VT \ge 2 + 2 + 2 + \frac{27}{21} = \frac{51}{7}.		
+	\]
+	Vậy ta có điều phải chứng minh. Đẳng thức xảy ra khi và chỉ khi $a = b = c \Rightarrow x = 2y = 3z \Rightarrow x = 6,\ y = 3,\ z = 2$.
+\end{problem}

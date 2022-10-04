@@ -1,0 +1,40 @@
+\begin{problem}
+Với ba số thực dương $x, y, z$ thỏa mãn $x + y + z = 1$, chứng minh rằng
+\[
+	\frac{1 - x^2}{x + yz} + \frac{1 - y^2}{y + zx} + \frac{1 - z^2}{z + xy} \ge 6.
+\]
+\credit{Đề thi tuyển sinh THPT chuyên, Sở GD-ĐT Hà Nội, 2014-B}
+
+\solution
+
+Áp dụng bất đẳng thức AM - GM ta có
+\[
+	\frac{1 - x^2}{x + yz} \ge \frac{1 - x^2}{\displaystyle x + \frac{(y + z)^2}{4}} 
+	= \frac{(1 - x)(1 + x)}{\displaystyle x + \frac{(1 - x)^2}{4}} = \frac{(1-x)(1+x)}{\displaystyle \frac{4x + 1 - 2x + x^2}{4}}
+	= \frac{(1-x)(1+x)}{\displaystyle \frac{(x + 1)^2}{4}} = \frac{4-4x}{x + 1}
+\]
+
+Vậy ta cần chứng minh
+\[
+	\frac{4-4x}{x + 1} + \frac{4-4y}{y + 1} + \frac{4-4z}{z + 1} \ge 6
+\]
+Ta có $\displaystyle \frac{4 - 4x}{x + 1} \ge -\frac{9}{2}x + \frac{7}{2}$. Thật vậy, bất đẳng thức này tương đương
+\begin{align*}
+8 - 8x \ge -9x^3 - 11x^2 + 5x + 7 \\
+\Leftrightarrow 9x^3 + 3x^2 - 5x + 1 \ge 0 \\
+\Leftrightarrow \left(x - \frac{1}{3}\right)^2(9x + 9) \ge 0
+\end{align*}
+Vì bất đẳng thưc cuối cùng đúng do $x > 0$, nên bất đẳng thức ban đầu đúng. Dấu bằng xảy ra khi $\displaystyle x = \frac{1}{3}$.
+
+Tương tự ta có
+\[
+	\frac{4 - 4y}{y + 1} \ge -\frac{9}{2}y + \frac{7}{2},\ \frac{4 - 4z}{z + 1} \ge -\frac{9}{2}z + \frac{7}{2}.
+\]
+Cộng các bất đẳng thức trên theo vế ta được
+\[
+	\frac{4 - 4x}{x + 1} + \frac{4 - 4y}{y + 1} + \frac{4 - 4z}{z + 1} \ge -\frac{9}{2}(x + y + z) + \frac{21}{2} = -\frac{9}{2} + \frac{21}{2} = 6.
+\]
+
+Vậy ta có điều phải chứng minh. Dấu bằng xảy ra khi $\displaystyle x = y = z = \frac{1}{3}$.
+
+\end{problem}
